@@ -1,0 +1,675 @@
+
+<html>
+<head>
+<style type="text/css">
+.knitr .inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage .left {
+  text-align: left;
+}
+.rimage .right {
+  text-align: right;
+}
+.rimage .center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+<title>Film</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<style>
+
+.schermointero{
+  position: relative;
+  
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.schermointero {
+  background-image: url("stadio.jpg");
+  height: 50%;
+  width:100%;
+  
+}
+
+
+/*font-family:"Segoe UI",Arial,sans-serif;
+font-family:Verdana,sans-serif;*/
+html,body{text-transform:uppercase;font-family:"Segoe UI",Arial,sans-serif;font-size:15px;line-height:1.5;text-align: justify;text-justify: inter-word;}html{overflow-x:hidden}
+h1{font-size:32px}h2{font-size:20px}h3{font-size:15px}h4{font-size:12px}h5{font-size:10px}h6{font-size:9px}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+/*pulsante per andare avanti*/
+.button {
+  display: inline-block;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border-color: #E12000;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2%;
+  width: 47%;
+  transition: all 0.5s;
+  background-color:#D2D2D2
+}
+
+.button:hover {
+  background-color: #E12000;
+  box-shadow: 0 0 0 ;}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*menu in alto*/
+* {box-sizing: border-box;}
+
+
+
+.header {
+  overflow: hidden;
+  background-color:transparent ;
+  
+  padding: 5px 5px;
+ position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left:0;
+width: 100%; /* Full width */
+
+  box-shadow: 0 0 0;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: inherit;
+  margin: 0; 
+  color: white;
+  display: block;
+  overflow: hidden;
+}
+a {
+  
+  text-decoration: none;
+  
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #00A000;
+  color: white;
+}
+
+.header a.active {
+  background-color:transparent;
+  color: white;
+  
+    
+  
+}
+
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 100%) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+.colonna {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contai {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.immlogo1 {
+    height: 35px;
+    
+    width: 35px;
+    
+    vertical-align: text-top;
+    
+}
+.stella {
+    height: 20px;
+    
+    width: 20px;
+    
+    vertical-align: text-top;
+    
+}
+.immlogo2 {
+    height: 25px;
+    
+    width: 275px;
+    
+    vertical-align: text-top;
+    
+}
+
+
+
+.imminfo{
+    width: 10%;
+    height: auto;
+    vertical-align: middle;
+    
+    
+}
+
+
+.immpart {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-top;
+    
+}
+
+.immprima {
+height:40%;
+    width: auto;
+    vertical-align: text-top;
+}
+
+.img1 {
+    
+    display: inline-block;
+    
+    vertical-align: middle;
+    
+}
+img {
+    width: 90%;
+}
+
+
+
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    
+    height: 50%;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+   /* border-bottom: 1px solid #006500;*/
+}
+
+
+h2 {
+display:inline;
+}
+
+
+
+.accordion {
+    background-color: #FFFFFF; /*#eee;*/
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    
+    border: 1px solid #006500;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: hsl(120, 100%, 99%); /*#ccc*/
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+     overflow: hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+ ul {
+ list-style-type: none;
+ }
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  
+  margin-top: -1px; /* Prevent double borders */
+  overflow: hidden;
+  white-space:pre;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  /*display: block;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;*/
+}
+
+#myInput li a:hover:not(.header) {
+  background-color: #eee
+}
+
+
+
+
+
+#classifica{
+    width: 90%;
+    border: 1px solid #006500;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+</style>
+<style>
+.popup {
+
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 100%;
+    margin-left: 5px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+#menucell{
+display:none;
+
+}
+
+.tendina{
+    width:100%;
+    height: 100%;
+    float: none;
+    top:0px;
+    position: fixed;
+    background-color: #f1f1f1;
+    left:0;
+}
+.tendina a {
+    color: #006500;
+    text-align: center;
+    float: left;
+    position: relative;
+    padding: 14px 16px;
+    text-decoration: none;
+    width:100%;
+    height:20%;
+    
+     border: 1px solid white;
+}
+.tendina a:hover {
+    color: white;
+    
+  background-color: #E12000;
+}
+
+#mytendina{
+    display:none;
+}
+
+
+
+</style>
+
+
+<style>
+/*rules*/
+
+
+@media only screen and (max-width: 1024px) {
+
+
+.column{display:none;}
+.colonna{width: 100%;}
+}
+
+
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen and (max-width: 1024px) {
+h2{font-size:15px}
+h3{font-size:10px}
+.immlogo1{
+ height: 60px;
+    width: auto;
+}
+
+    .header a.active {padding: 35px;}
+}
+
+@media only screen and (max-width: 835px) {
+h2{font-size:13px}
+h3{font-size:8px}
+.immlogo1{
+ height: 50px;
+    
+    width: auto;
+}
+}
+
+
+@media only screen and (max-width: 700px) {
+h2{font-size:10px}
+h3{font-size:6px}
+.immlogo1{
+ height: 40px;
+    
+    width: auto;
+}
+}
+
+
+
+
+@media only screen and (max-width: 525px) {
+h2{font-size:9px}
+h3{font-size:5px}
+.immlogo1{
+ height: 30px;
+    
+    width: auto;
+}
+}
+
+@media only screen and (max-width: 370px) {
+h2{font-size:5px}
+h3{font-size:3px}
+.immlogo1{
+ height: 25px;
+    
+    width: auto;
+}
+}
+
+
+
+
+</style>
+
+
+</head>
+<body >
+
+
+
+
+
+
+<center><h1>case cinematografiche analizzate</h1>
+  </center>
+
+
+  <div class="column" style="background-color:hsla(147, 50%, 47%, 0.01)">
+  
+  </div>
+  
+  <div class="colonna" style="background-color:WHITE">
+  
+
+  <br>
+
+<div style=display:none;>
+
+</div><input type=text id=myInput onkeyup=myFunction() placeholder= " Cerca una casa di distribuzione cinematografica "  title=Type in a name><div id=myUL><div style=display:none;></div><ul><button class=accordion><li><a href=#f1><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0VebAh5vGA5rMmq8bvXB4imphc4QTWhMvaWPHDn_BjJ-SRw1d2TLT2w align=left ></div></td><td><a name=f1></a><h2> 01 Distribution </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>01 Distribution</b> è una famosa casa di distribuzione cinematografica nata nel 1997, ha prodotto da quando è nata un totale di 480 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img1.png ><div class=centered>01 Distribution</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDByGB4s5k36vTVz9c_lQeGl_FEAlVU4CBbLoIdwk9c19-nAlGhUifvbM align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2002<br><b>TITOLO: </b>Il Pianista <br><b>GENERE: </b>Drammatico<br><b>DURATA: </b> 148 Min<br><b>DISTRIBUZIONE: </b>01 Distribution<br><b>PAESE DOVE E' STATO GIRATO: </b>Francia, Polonia, Germania, Gran Bretagna<br><b>ATTORI: </b>Adrien Brody, Thomas Kretschmann, Frank Finlay, Maureen Lipman, Ed Stoppard, Julia Rayner, Jessica Kate Meyer, Emilia Fox, Ruth Platt, Valentine Pelka, Ronan Vibert<br><b>TRAMA: </b> L'Olocausto attraverso gli occhi del pianista Wladyslaw Szpilman, già dipinto nell'omonimo romanzo autobiografico. Nella tranquilla saletta di registrazione della radio dove lavora, Szpilman (Adrien Brody) sta eseguendo il Notturno in Do diesis minore di Chopin, quando una serie di violente esplosioni distruggono la facciata del palazzo, annunciando l'inizio della seconda guerra mondiale e l'invasione della Polonia. Nei giorni successivi Varsavia viene occupata e sulla famiglia Szpilman, come sul resto della comunità ebraica, si abbatte il flagello nazista. La fame e la miseria in cui versano, le angherie e le umiliazioni subite non piegano lo spirito di Wladyslaw e dei suoi cari che, seppure esiliati nel ghetto di Varsavia, lottano per restare uniti. Persino sui vagoni spogli diretti ai campi di sterminio. Solo il pianista viene separato dal nucleo e comincia a vagare solo per la città, elemosinando cibo e rifugio. Finché un ufficiale tedesco (Thomas Kretschmann), colpito dallo straordinario talento musicale del giovane, non decide di proteggerlo e nasconderlo fino alla liberazione della città.<br><b>MUSICHE: </b>Wojciech Kilar<br><b>VALUTAZIONE IN ITALIA: </b>7.97 SU 10 HANNO VOTATO 96 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.5 SU 10 HANNO VOTATO 616338 PERSONE<br><br><img src= Grafico_1.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f2><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcTCftNwIpBs8L1_3yvzq7YQP266Gtwa4eqHFvX0rAzW5E4bHm9--49w align=left ></div></td><td><a name=f2></a><h2> 20th Century Fox </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>20th Century Fox</b> è una famosa casa di distribuzione cinematografica nata nel 1930, ha prodotto da quando è nata un totale di 1849 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img2.png ><div class=centered>20th Century Fox</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsstglbSH1sx_a5OhFRkzTXqwtmFSNN4q0PCdzjUBEKti0Pvko3rSio2vk align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1980<br><b>TITOLO: </b>L'Impero colpisce ancora <br><b>GENERE: </b>Fantascienza<br><b>DURATA: </b> 125 Min<br><b>DISTRIBUZIONE: </b>20th Century Fox<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Mark Hamill, Harrison Ford, Alec Guinness, Carrie Fisher, Billy Dee Williams, Des Webb, Peter Mayhew, David Prowse, Clive Revill, Jack Purvis, Michael Sheard, Kenny Baker, Bruce Boa, Jeremy Bulloch, Michael Culver, Kenneth Colley, Anthony Daniels, Julian Glover, John Hollis<br><b>TRAMA: </b> La Principessa Leila, ha trovato un poco ospitale rifugio su Hoth, pianeta di ghiaccio. Le stanno accanto, fedelissimi e innamorati, il cavaliere Jedi Luke Skywalker, il valoroso Ian Solo, il gigantesco Chewbecca, e i robot C3PO e R2-D2. Raggiunti dai feroci soldati del nero e spietato Dart Fener, la principessa, Chewbecca e i robot vengono messi in salvo da Ian Solo che è riuscito a mettere in sesto il vecchio ma velocissimo "Millennium Falcon". Nel frattempo Luke - invitato dallo spirito consigliere di Ben Obi Wan Kenobi - si reca da Yoda, un misterioso gnomo, già educatore del padre e ora destinato a far maturare il rampollo. Han Solo, non sapendo dove mettere al sicuro Leila, si dirige verso la miniera spaziale di Lando Carlissian, già suo amico. Ma, essendo stati preceduti da Dart Fener, essi cadono nelle sue mani. Ian Solo, ibernato, viene consegnato ad un cacciatore di taglie che dovrebbe portarlo al suo creditore Jabba the Hutt. Ma Lando, che è stato costretto al tradimento, si affianca alla principessa e la soccorre mentre il sopraggiunto Luke ingaggia un terribile duello con Dart Fener...<br><b>MUSICHE: </b>John Williams<br><b>VALUTAZIONE IN ITALIA: </b>8.3 SU 10 HANNO VOTATO 57 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.8 SU 10 HANNO VOTATO 1017963 PERSONE<br><br><img src= Grafico_2.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f3><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqvWyq6RdqPhrWvKgU9-SingnpkuUS51p4T51mTPmBc4i9i1qIZZUow align=left ></div></td><td><a name=f3></a><h2> BIM </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>BIM</b> è una famosa casa di distribuzione cinematografica nata nel 1940, ha prodotto da quando è nata un totale di 402 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img3.png ><div class=centered>BIM</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGA-QGIt8Hz8exMxm7ablSqC5StXX59fU5Bf8gEaI6oF1FBWFxJwOWtsQ align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2001<br><b>TITOLO: </b>Il favoloso mondo di Amélie <br><b>GENERE: </b>Commedia<br><b>DURATA: </b> 120 Min<br><b>DISTRIBUZIONE: </b>BIM<br><b>PAESE DOVE E' STATO GIRATO: </b>Francia<br><b>ATTORI: </b>Audrey Tautou, Mathieu Kassovitz, Rufus, Yolande Moreau, Artus de Penguern, Urbain Cancelier, Dominique Pinon, Claude Perron, Maurice Bénichou, Isabelle Nanty, Clothilde Mollet, Claire Maurier, Jamel Debbouze<br><b>TRAMA: </b> Amélie vive a Parigi ma in un mondo tutto suo. Traumatizzata dalla morte improvvisa di sua madre e dalla conseguente freddezza di suo padre, ora subisce il fascino delle piccole cose: fare una torta, tuffare la mano in un barile di riso, immaginare quanti orgasmi si stiano verificando in città nello stesso momento. Prende in affitto un appartamento a Montmartre. Si occupa del gatto della sua amica hostess Philomène quando lei è via per un volo e, pur sentendosi colpevole, spia il vicino Dufayel, un uomo con le ossa fragili. Lavora in un caffé chiamato "Les Deux Moulins" dove la sua capa Suzanne sogna la sua vita passata nel circo, e la sua collega Gina respinge seccamente le attenzioni dell'ex fidanzato geloso Joseph. La vita di Amélie è abbastanza felice, ma le va stretta. Un giorno, Amélie scopre una vecchia scatola di tesori d'infanzia nel suo appartamento. Presa dall'eccitazione, decide che la sua missione sarà ritrovare il proprietario. <br><b>MUSICHE: </b>Yann Tiersen<br><b>VALUTAZIONE IN ITALIA: </b>8.02 SU 10 HANNO VOTATO 65 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.3 SU 10 HANNO VOTATO 634257 PERSONE<br><br><img src= Grafico_3.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f4><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv7Agc6n6d9jaoOM-KDcPSRGtAhQWrTrhFFff0VIFEDx3-SXHUgjze52w align=left ></div></td><td><a name=f4></a><h2> Buena Vista </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Buena Vista</b> è una famosa casa di distribuzione cinematografica nata nel 1950, ha prodotto da quando è nata un totale di 368 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img4.png ><div class=centered>Buena Vista</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWuLkgLslBIVTR2xAKhpSpcqKod4GEw_BMjXMczXfAbzO7ywKo6EY60g align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1995<br><b>TITOLO: </b>Toy Story - Il mondo dei giocattoli <br><b>GENERE: </b>Animazione<br><b>DURATA: </b> 77 Min<br><b>DISTRIBUZIONE: </b>Buena Vista<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>NA, NA<br><b>TRAMA: </b> Il film inizia con una riunione dei giocattoli, alla fine della quale si genera il caos perché viene annunciato che quel giorno è il compleanno di Andy. Tutti i giocattoli hanno paura di esser sostituiti, tranne Woody, il preferito. Per calmare gli altri, Woody decide di mandare un piccolo gruppo di soldatini a vedere che regali vengono consegnati ad Andy, e trovano solo una scatola, della quale non riescono a capire cosa sia il contenuto.<br><b>MUSICHE: </b>Randy Newman<br><b>VALUTAZIONE IN ITALIA: </b>8.52 SU 10 HANNO VOTATO 65 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.3 SU 10 HANNO VOTATO 762990 PERSONE<br><br><img src= Grafico_4.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f5><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4U_bEao2ud5vdza-I94VCDeYseES0ReRkfRrHjgNXnAUDLiFsEoWoQ align=left ></div></td><td><a name=f5></a><h2> Columbia Pictures </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Columbia Pictures</b> è una famosa casa di distribuzione cinematografica nata nel 1932, ha prodotto da quando è nata un totale di 171 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img5.png ><div class=centered>Columbia Pictures</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ59c2xnwaWlNJOxftG9GfyAcL-zvq7IWmqdwZ2tFf4SkW0zm1oebWbEmg align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2000<br><b>TITOLO: </b>Snatch - Lo strappo <br><b>GENERE: </b>Thriller<br><b>DURATA: </b> 104 Min<br><b>DISTRIBUZIONE: </b>Columbia Pictures<br><b>PAESE DOVE E' STATO GIRATO: </b>Gran Bretagna<br><b>ATTORI: </b>Benicio Del Toro, Dennis Farina, Vinnie Jones, Brad Pitt, Rade Sherbedgia, Lennie James, Robbie Gee, Jason Statham, Mike Reid, Alan Ford, Ewen Bremner, Jason Flemyng, Ade, Stephen Graham<br><b>TRAMA: </b> Durante il suo viaggio a New York per consegnare un gigantesco diamante al boss mafioso Avi, il ladro e corriere di preziosi Frank "Quattrodita" passa per Londra per piazzare pietre più piccole presso il cugino del suo capo Doug "La Zucca". Fa una puntata su un incontro di boxe illegale e si trova in un bel pasticcio... Tranelli, doppi giochi, imboscate, si susseguono in un clima un po' drammatico e molto farsesco.<br><b>MUSICHE: </b>John Murphy (II<br><b>VALUTAZIONE IN ITALIA: </b>7.46 SU 10 HANNO VOTATO 42 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.3 SU 10 HANNO VOTATO 700527 PERSONE<br><br><img src= Grafico_5.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f6><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_GQ9pF5iHOM6kphscKuCWItgJFiZmmdHAD02EK3N1h-kBZSfKnqBNnis align=left ></div></td><td><a name=f6></a><h2> Eagle Pictures </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Eagle Pictures</b> è una famosa casa di distribuzione cinematografica nata nel 1941, ha prodotto da quando è nata un totale di 557 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img6.png ><div class=centered>Eagle Pictures</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkvoq3PJZvw3HVyAMdgNuej-u9_dAgjV40x5evEU02j1CTzp7m9VFPzgo align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2004<br><b>TITOLO: </b>Se mi lasci ti cancello <br><b>GENERE: </b>Commedia<br><b>DURATA: </b> 108 Min<br><b>DISTRIBUZIONE: </b>Eagle Pictures<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Jim Carrey, Kate Winslet, Kirsten Dunst, Tom Wilkinson, Elijah Wood, Mark Ruffalo, David Cross, Thomas J. Ryan, Jane Adams (II, Ryan Whitney, Debbon Ayer, Lola Daehler, Deirdre O'Connell, Amir Ali Said, Brian Price, Paul Litowsky, Josh Flitter, Gerry Robert Byrne<br><b>TRAMA: </b> Joel è allibito quando scopre che la sua fidanzata Clementine si è sottoposta ad un procedimento per cancellare il loro rapporto tumultuoso dalla sua memoria. Disperato, si rivolge all'inventore di tale procedimento, il Dr. Howard Mierzwiak per farsi cancellare Clementine dalla propria memoria. I ricordi di Joel svaniscono progressivamente, ma durante il processo Joel riscopre il suo amore per Clementine. Dal profondo dei recessi della sua mente, Joel lotta per sfuggire al procedimento. Il Dr. Mierzwiak e la sua èquipe si lanciano al suo inseguimento attraverso il labirinto dei suoi ricordi, ma diventa presto evidente che Joel non riesce proprio a togliersi Clementine dalla testa...<br><b>MUSICHE: </b>Jon Brion<br><b>VALUTAZIONE IN ITALIA: </b>7.9 SU 10 HANNO VOTATO 121 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.3 SU 10 HANNO VOTATO 799042 PERSONE<br><br><img src= Grafico_6.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f7><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6t5K-FPk6dSvpazCDdCY9yY6v5vbdJqrZlr32uwjhkeobgdSn4cjHyo align=left ></div></td><td><a name=f7></a><h2> Lucasfilm ltd. </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Lucasfilm ltd.</b> è una famosa casa di distribuzione cinematografica nata nel 1983, ha prodotto da quando è nata un totale di 11 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img7.png ><div class=centered>Lucasfilm ltd.</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0FC_dFfVg_2IdyG24jJFIYw0YJ9c4mccE4OoPcIy94AR3R96oL1Knmg align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1983<br><b>TITOLO: </b>Ai nostri amori <br><b>GENERE: </b>Drammatico<br><b>DURATA: </b> 102 Min<br><b>DISTRIBUZIONE: </b>Lucasfilm ltd.<br><b>PAESE DOVE E' STATO GIRATO: </b>Francia<br><b>ATTORI: </b>Sandrine Bonnaire, Evelyn Ker, Dominique Besnehard, Cyr Boitard, Cyril Collard, Maurice Pialat, Anne-Sophie Maillé, Christophe Odent, Pierre-Loup Rajot, Maïté Maillé<br><b>TRAMA: </b> Suzanne, adolescente di quindici anni, vive in famiglia mentre segue gli studi con disordinato interesse. Preferisce, in maniera spontanea ma ugualmente confusa, intrecciare rapporti sentimental/sessuali con i suoi coetanei, facendosene quasi riparo contro il pesante clima familiare. Proprio la famiglia infatti la mette in difficoltà. Il padre e la madre sono in lite continua e il fratello inutilmente cerca di smussare i dissidi. Un giorno il padre, dopo un serrato colloquio con la figlia, decide di andarsene. La madre, rimasta sola, sfoga la sua rabbia contro Suzanne, che trova un nemico anche nel fratello, manesco e isterico. Così la ragazza continua a coltivare i suoi amori, con uno dei quali, tra la sorpresa generale, arriva a sposarsi. Ma il matrimonio ha breve durata. Una sera il padre torna a casa, usa parole pesanti contro l'intera famiglia provocando ulteriori, esagitate reazioni. Suzanne infine prende una decisione: lasciato il marito, parte per gli Stati Uniti in compagnia di un altro ragazzo. Il padre l'accompagna all'aeroporto, ma non per consolarla.<br><b>MUSICHE: </b>Klaus Nomy<br><b>VALUTAZIONE IN ITALIA: </b>7.38 SU 10 HANNO VOTATO 1 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>7.4 SU 10 HANNO VOTATO 4532 PERSONE<br><br><img src= Grafico_7.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f8><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dbjMvJIO07pCm-xj-6UkvmELSlFyW6cqlLbIt06Nqta50ekWtOZ5Zis align=left ></div></td><td><a name=f8></a><h2> Lucky Red </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Lucky Red</b> è una famosa casa di distribuzione cinematografica nata nel 1947, ha prodotto da quando è nata un totale di 435 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img8.png ><div class=centered>Lucky Red</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzEVHzGogmcgQt51xAWGHpHXeqQKyWGFAclQKsreb5msQiP15MjFRAT04 align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1995<br><b>TITOLO: </b>I soliti sospetti <br><b>GENERE: </b>Thriller<br><b>DURATA: </b> 105 Min<br><b>DISTRIBUZIONE: </b>Lucky Red<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Gabriel Byrne, Kevin Spacey, Stephen Baldwin, Chazz Palminteri, Kevin Pollak, Pete Postlethwaite, Benicio Del Toro, Giancarlo Esposito, Ron Gilbert, Clark Gregg, Dan Hedaya, Suzy Amis, Paul Bartel, Frank Medrano, Carl Bressler<br><b>TRAMA: </b> In California, una nave esplode sul molo di San Pedro: un noto criminale. Dean Keaton, viene ucciso nella stiva da un ignoto dove ha appiccato il fuoco mentre l'equipaggio è stato sterminato. L'unico sopravvissuto alla strage, un delinquente di mezza tacca, lo storpio Verbal Kint, viene interrogato da David Kujan, poliziotto doganale. Verbal rivela che sei settimane prima si era trovato inspiegabilmente in un confronto all'americana con quattro noti criminali: Dean Keaton, ex poliziotto corrotto; il violento McManus col socio di rapine Fenster; lo specialista in esplosivi Todd Hockney. Dall'incontro era nata l'idea di tendere una trappola ad un gruppo di poliziotti corrotti che servendosi di automobili della polizia permettevano a trafficanti di droga e smeraldi di consegnare merce e ritirare soldi. Il colpo riesce e l'organizzazione smantellata. Poi il ricettatore a Los Angeles dà loro un'altra indicazione per rapinare gli smeraldi di un texano. Ma tre uomini restano uccisi e sui quattro criminali si allunga l'ombra di un fantomatico boss, che li ricatta tramite il suo avvocato Kobayashi. Fenster, che vuole dileguarsi, viene trovato morto. I loro dossier sono nelle mani del misterioso Keyser Soze, che tramite l'avvocato ordina loro di uccidere l'equipaggio di una nave di trafficanti rivali argentini, eliminare il carico di droga e tenersi il denaro. <br><b>MUSICHE: </b>John Ottman<br><b>VALUTAZIONE IN ITALIA: </b>8.27 SU 10 HANNO VOTATO 67 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.6 SU 10 HANNO VOTATO 879035 PERSONE<br><br><img src= Grafico_8.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f9><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKbQKghNVdsEjvLlr2aAcNbqNTR6sKkn8S2HPXUmkN7gnrXqJ2e-ucww align=left ></div></td><td><a name=f9></a><h2> Mediaset </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Mediaset</b> è una famosa casa di distribuzione cinematografica nata nel 1976, ha prodotto da quando è nata un totale di 8 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img9.png ><div class=centered>Mediaset</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZIs8WTMhggNuY1K96ZxVqbB0u8X1ECv4ZIm96DR24VPP3l-XnfvO1IE align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1995<br><b>TITOLO: </b>Prima dell'alba <br><b>GENERE: </b>Commedia<br><b>DURATA: </b> 101 Min<br><b>DISTRIBUZIONE: </b>Mediaset<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Ethan Hawke, Julie Delpy, Andrea Eckert, Haymon Maria Buttinger, Karl Bruckschewaiger, Dominik Castell, Bilge Jeschim, Erni Mangold, Hanno Poschl, Tex Rubinowitz, Harold Waiglein<br><b>TRAMA: </b> Una coppia di litigiosi vicini di scompartimento inducono Celine, francese, 23 anni, di ritorno a Parigi da Budapest, a cambiare posto sul treno. Fa conoscenza così con il venticinquenne Jesse, statunitense, che a Vienna deve prendere un aereo per rientrare dalle ferie. Celine accetta di passare la notte a vagabondare per Vienna col giovane, e tra i due nasce una progressiva confidenza, cui subentra un notevole interesse. La loro lunga conversazione tocca svariati argomenti, dalle prime esperienze sentimentali alla paura della morte, dall'odio impotente per le guerre che si verificano in varie parti del mondo alla reincarnazione.<br><b>MUSICHE: </b>NA<br><b>VALUTAZIONE IN ITALIA: </b>7.17 SU 10 HANNO VOTATO 9 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.1 SU 10 HANNO VOTATO 230107 PERSONE<br><br><img src= Grafico_9.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f10><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIPwhB8QKIE279-9C7j3-3KkdOD9xEUiJR4xrHsgJ7OTXLGOJTd4rj5Oc align=left ></div></td><td><a name=f10></a><h2> Medusa Film </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Medusa Film</b> è una famosa casa di distribuzione cinematografica nata nel 1932, ha prodotto da quando è nata un totale di 1464 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img10.png ><div class=centered>Medusa Film</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-nDPSbuxUkKS7pkzw530TsL_25kztmuPAekebevq-gCo8wFb-O8yAA align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2003<br><b>TITOLO: </b>Il Signore degli Anelli - Il ritorno del re <br><b>GENERE: </b>Avventura<br><b>DURATA: </b> 201 Min<br><b>DISTRIBUZIONE: </b>Medusa Film<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Elijah Wood, Billy Boyd, Dominic Monaghan, Sean Astin, Ian McKellen, Viggo Mortensen, Orlando Bloom, Liv Tyler, John Rhys-Davies, John Noble, Karl Urban, David Wenham, Christopher Lee, Hugo Weaving, Andy Serkis, Miranda Otto, Cate Blanchett, Brad Dourif, Bernard Hill, Ian Holm<br><b>TRAMA: </b> Le forze di Sauron hanno attaccato la capitale di Gondor, Minas Tirith, nel suo assedio finale contro l'umanità. Tenuto da un debole sovrintendente, quello che una volta era un fastoso regno non ha mai avuto così bisogno del proprio re. Mentre Gandalf tenta disperatamente di spingere lo smembrato esercito di Gondor ad agire, Thèoden si unisce ai guerrieri di Rohan per combattere assieme a loro. Pieno di coraggio e di appassionata lealtà, l'esercito degli umani non riesce però a tener testa alle numerosissime legioni nemiche che giungono su tutto il regno. Ogni vittoria è accompagnata da un grande sacrificio. Malgrado le numerose perdite, la Compagnia si lancia verso la più grande battaglia mai affrontata, unita dall'unico scopo di riuscire a tenere Sauron distratto e dare a Frodo una occasione per portare a termine la sua spedizione...<br><b>MUSICHE: </b>Howard Shore<br><b>VALUTAZIONE IN ITALIA: </b>8.8 SU 10 HANNO VOTATO 234 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.9 SU 10 HANNO VOTATO 1442080 PERSONE<br><br><img src= Grafico_10.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f11><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8MdiVAzgxx6clwun__AGx9zsIRNHhm-urUzvN4iI1r5n6XgBHdQUgYQ align=left ></div></td><td><a name=f11></a><h2> Metro-Goldwyn-Mayer </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Metro-Goldwyn-Mayer</b> è una famosa casa di distribuzione cinematografica nata nel 1928, ha prodotto da quando è nata un totale di 48 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img11.png ><div class=centered>Metro-Goldwyn-Mayer</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2HJmQmzoBz9qTHDrYgVkhZUpI9H3eLupBUBKYd758xlLN-KLur3p7s60 align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1928<br><b>TITOLO: </b>IL CAMERAMAN <br><b>GENERE: </b>Comico<br><b>DURATA: </b> 69 Min<br><b>DISTRIBUZIONE: </b>Metro-Goldwyn-Mayer<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Buster Keaton, Marceline Day, Harold Goodwin, Sidney Bracey, Edward Brophy, Harry Gribbon, Vernon Dent, William Irving<br><b>TRAMA: </b> Un giovane fotografo piuttosto maldestro riesce a farsi assumere come cameraman in un'agenzia giornalistica specializzata nella produzione di attualità cinematografiche. Nonostante le informazioni e i suggerimenti di Sally, la graziosa segretaria dell'agenzia che lo ha preso sotto la sua protezione, il giovane operatore perde tutte le occasioni favorevoli che gli si presentano per effettuare sensazionali colpi giornalistici: dimentica di inserire la pellicola nel caricatore, gira due volte la stessa bobina, per circostanze avverse non riesce a riprendere gli avvenimenti che si svolgono sotto i suoi occhi. Deluso, il cameraman decide di abbandonare per sempre questo mestiere che gli ha procurato soltanto insuccessi e derisioni, ma il casuale ritrovamento di due film da lui girati (uno dei quali con il concorso di una scimmietta ammaestrata) giunge all'improvviso a portargli un'inaspettata gloria e insieme ad essa l'amore di Sally.<br><b>MUSICHE: </b>NA<br><b>VALUTAZIONE IN ITALIA: </b>7.63 SU 10 HANNO VOTATO 3 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.3 SU 10 HANNO VOTATO 8966 PERSONE<br><br><img src= Grafico_11.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f12><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT29l3ljGo2vkFbBgVUojwjcqqoyT-r_UDQRaY7DpZEpntPaWvmwNdJmbA align=left ></div></td><td><a name=f12></a><h2> Paramount Pictures </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Paramount Pictures</b> è una famosa casa di distribuzione cinematografica nata nel 1920, ha prodotto da quando è nata un totale di 723 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img12.png ><div class=centered>Paramount Pictures</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLv4sjR7Lcx9B_uf-Y9_FtI6P6Fx1uqupsPpwgsK2v9MPdKfSmTNNWPQ align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1972<br><b>TITOLO: </b>Il Padrino <br><b>GENERE: </b>Drammatico<br><b>DURATA: </b> 175 Min<br><b>DISTRIBUZIONE: </b>Paramount Pictures<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Marlon Brando, Al Pacino, James Caan, Richard Castellano, Robert Duvall, Rudy Bond, John Cazale, Franco Citti, Richard Conte, Richard Bright, Salvatore Corsetto, Sterling Hayden, Corrado Gaipa, Tony Giorgio, Julie Gregg, Angelo Infanti, Morgana King, Diane Keaton, Jeannie Linero, Tere Livrano, Al Lettieri, John Marley, John Martino, Lenny Montana, Alex Rocco, Victor Rendina, Gianni Russo, Al Martino, Simonetta Stefanelli, Vito Scotti, 
+Cardell Sheridan, Talia Shire, Saro Urzì, Abe Vigoda<br><b>TRAMA: </b> Anni Quaranta. Come è consuetudine, durante il rinfresco per festeggiare le nozze della figlia Conny con Carlo, il "padrino" don Vito Corleone promette assistenza e protezione a familiari e amici. Invia il figliastro Tom Hagen in California per convincere in ogni modo il produttore Jack Woltz a scritturare il cantante Johnny nel suo prossimo film. Woltz non acconsente. Tom allora lo costringe ad accettare con un "avvertimento": l'uccisione del suo cavallo di razza preferito. Sollozzo, a nome della potente "famiglia" Tartaglia, chiede a Corleone finanziamenti e appoggi per il traffico di droga. Il rifiuto scatena una lotta cruenta tra le due cosche: lo stesso don Vito viene ferito gravemente; il figlio minore Michael lo salva da un secondo attentato. Michael, poi, scavalcando l'irruento fratello Sonny e Tom, temporeggiatore, organizza un incontro con Sollozzo e con il corrotto capitano di polizia McCluskey uccidendoli entrambi. Michael, per evitare rappresaglie, si nasconde in Sicilia. Qui il giovane s'innamora di Apollonia: la sposa. Quando la moglie muore in un attentato e Sonny viene massacrato dai rivali, torna negli Stati Uniti. Partecipa ad un tentativo (vano) di riappacificazione generale fra le varie "famiglie". Don Vito nomina "padrino" Michael il quale, dopo la morte del padre, assume le redini con inaudita fermezza: tra le vittime della sua spietata repressione ci saranno Johnny, ormai famoso, e il cognato.<br><b>MUSICHE: </b>Nino Rota, Carmine Coppola<br><b>VALUTAZIONE IN ITALIA: </b>9.28 SU 10 HANNO VOTATO 128 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>9.2 SU 10 HANNO VOTATO 1389681 PERSONE<br><br><img src= Grafico_12.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f13><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZUuTz9OQkj2Op0QpX05ZFQMrd1oY4igKrWc9JE43QiN81rGaRZioNQ align=left ></div></td><td><a name=f13></a><h2> RAI </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>RAI</b> è una famosa casa di distribuzione cinematografica nata nel 1966, ha prodotto da quando è nata un totale di 108 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img13.png ><div class=centered>RAI</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT90O9tuhGz2fF9mgjQpVcf11XSdTkWFw02TP0oZp8Ux9YcdTMetPjkzyw align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1975<br><b>TITOLO: </b>Qualcuno volò sul nido del cuculo <br><b>GENERE: </b>Commedia<br><b>DURATA: </b> 133 Min<br><b>DISTRIBUZIONE: </b>RAI<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Jack Nicholson, Louise Fletcher, William Redfield, Michael Berryman, Peter Brocco, Danny De Vito, Christopher Lloyd, Vincent Schiavelli, Dean R. Brooks, Alonzo Brown, Mwako Cumbuka, William Duell, Josip Elic, Lan Fendors, Nathan George, Ken Kenny, Sydney Lassick, Kay Lee, Dwight Marfield, Ted Markland, Louisa Moritz, Phil Roth, Will Sampson, Mimi Sarkisian, Mews Small, Delos V. Smith Jr., Tin Welch, Brad Dourif, Scatman Crothers, Mel Lambert, 
+Anjelica Huston<br><b>TRAMA: </b> In un ospedale psichiatrico tutto ordine e pulizia arriva un giorno il giovane Randle P. McMurphy, che, condannato per reati di violenza, spera, spacciandosi per matto, di sottrarsi al carcere: ai medici il compito di scoprire se sia o meno un simulatore. La sua comparsa, intanto, porta lo scompiglio in quel chiuso ambiente di repressione mascherata, di intransigente disciplina imposta e mantenuta da una ferrea capo-infermiera, la signorina Ratched. L'allegro McMurphy volge in burla le sedute psicanalitiche di gruppo, si improvvisa radiocronista di immaginarie partite di baseball, organizza una "scappatella" in barca coi suoi compagni, impianta una squadra di basket. Più i ricoverati, però, gli stringono fiduciosi intorno, contagiati dal suo spirito di disubbidienza, più la Ratched stringe la vite del sistema repressivo. Forte dell'amicizia di un gigantesco indiano, che si era finto sordomuto, McMurphy decide di fuggire con lui. Prima, però, regala agli amici una festicciola notturna, con due ragazze fatte entrare clandestinamente. La Ratched scopre uno dei ricoverati, il mite Jimmy, tra le braccia di una di loro: lo terrorizza, facendo leva sul suo complesso di colpa, e il giovane si uccide. McMurphy, infuriato, salta al collo della capo-infermiera e quasi la strozza. Condotto in sala operatoria e sottoposto a lobotomia, McMurphy diventa una larva d'uomo che l'indiano, prima di evadere, soffoca pietosamente con un cuscino.<br><b>MUSICHE: </b>Jack Nitzsche<br><b>VALUTAZIONE IN ITALIA: </b>9.11 SU 10 HANNO VOTATO 119 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.7 SU 10 HANNO VOTATO 805503 PERSONE<br><br><img src= Grafico_13.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f14><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLPa5J1aSRBDfTeddrwqg2HQPSkTEHCaF_8vSiT9tuOuj9PsHIVIB_uXU align=left ></div></td><td><a name=f14></a><h2> Sony Pictures Entertainment </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Sony Pictures Entertainment</b> è una famosa casa di distribuzione cinematografica nata nel 1970, ha prodotto da quando è nata un totale di 209 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img14.png ><div class=centered>Sony Pictures Entertainment</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTouJj_xnun2IXaVtNZeO3dBXLYt-2nkkY7nNq70tJOBaH9c90XxAnUjmw align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2006<br><b>TITOLO: </b>Casino Royale <br><b>GENERE: </b>Azione<br><b>DURATA: </b> 145 Min<br><b>DISTRIBUZIONE: </b>Sony Pictures Entertainment<br><b>PAESE DOVE E' STATO GIRATO: </b>USA, Gran Bretagna<br><b>ATTORI: </b>Daniel Craig, Eva Green, Mads Mikkelsen, Caterina Murino, Judi Dench, Jeffrey Wright, Giancarlo Giannini, Ivana Milicevic, Simon Abkarian, Isaach De Bankolé, Claudio Santamaria, Jesper Christensen, Tobias Menzies, Clemens Schick, Emmanuel Avena, Urbano Barberini, Joseph Millson, Sebastien Foucan, Ludger Pistor, Malcolm Sinclair, Daud Shah, Charlie Levy, Tom So, Ade, Veruschka von Lehndorff, Jürgen Tarrach, Lazar Ristovski, Tsai Chin, Con O'Neill, 
+Daniel Andreasson, Richard Branson, Christina Cole, Carlos Leal<br><b>TRAMA: </b> CASINO ROYALE ripercorre i primi passi della carriera di James Bond. Nella sua prima missione da "007", Bond è chiamato a confrontarsi con Le Chiffre, banchiere delle organizzazioni terroristiche mondiali. Per fermarlo e smantellare la rete terroristica a lui collegata, Bond deve battere Le Chiffre in un torneo di poker milionario al Casino Royale. Il film, segna l'esordio nei panni di James Bond dell'attore britannico Daniel Craig, supportato da un cast di star internazionali. Judi Dench appare ancora una volta nel ruolo di M, capo dei servizi segreti britannici. Vesper Lynd, la prima donna di cui James Bond si innamora, è interpretata dall’attrice francese Eva Green, mentre il danese Mads Mikkelsen recita la parte di Le Chiffre, coinvolto nel riciclaggio internazionale di denaro sporco e avversario di Bond nella partita a poker milionaria attorno alla quale si dipana la trama del film.<br><b>MUSICHE: </b>David Arnold<br><b>VALUTAZIONE IN ITALIA: </b>7.96 SU 10 HANNO VOTATO 53 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8 SU 10 HANNO VOTATO 527818 PERSONE<br><br><img src= Grafico_14.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f15><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNAGs1hOsVmo2Thw-EjCtxtdHrzLQBaQnHeSdedZoJ3mbSJUsgWyTwg align=left ></div></td><td><a name=f15></a><h2> TriStar Pictures </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>TriStar Pictures</b> è una famosa casa di distribuzione cinematografica nata nel 1926, ha prodotto da quando è nata un totale di 1108 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img15.png ><div class=centered>TriStar Pictures</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO35snYBp5ODsKhzaMf2MqGjOwhLwDXnAdsHEX8yb3l1AfSn6E5-xJ0I4 align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1964<br><b>TITOLO: </b>Il dottor Stranamore <br><b>GENERE: </b>Commedia<br><b>DURATA: </b> 93 Min<br><b>DISTRIBUZIONE: </b>TriStar Pictures<br><b>PAESE DOVE E' STATO GIRATO: </b>Gran Bretagna<br><b>ATTORI: </b>Peter Sellers, George C. Scott, Sterling Hayden, Keenan Wynn, Slim Pickens, Peter Bull, James Earl Jones, Glenn Beck, Tracy Reed, Shane Rimmer, Robert Vincent O'Neill, Jack Creley, Hal Galili, Laurence Herder, Frank Berry, Paul Tamarin, Roy Stephens, Gordon Tanner, John McCarthy (II<br><b>TRAMA: </b> Un generale psicopatico americano, che fa parte dell'alto comando strategico dell'aereonautica, dà ordine a una squadriglia di aeroplani, attrezzati per il trasporto di bombe atomiche, di volare per un'azione contro l'Unione Sovietica. Subito dopo si chiude nella base, e quindi tutti, compreso il presidente degli Stati Uniti, sono impossibilitati ad intervenire. Sia gli alti ufficiali americani sia i massimi esponenti sovietici, tentano di fermare la minaccia di una guerra nucleare.<br><b>MUSICHE: </b>Laurie Johnson<br><b>VALUTAZIONE IN ITALIA: </b>8.6 SU 10 HANNO VOTATO 28 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.4 SU 10 HANNO VOTATO 404270 PERSONE<br><br><img src= Grafico_15.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f16><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SUnu-WWKf07P1N5tlOur0t6Ai1E5JWRBvOHEvY25qGpXX9UJjXzTl-o align=left ></div></td><td><a name=f16></a><h2> UIP </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>UIP</b> è una famosa casa di distribuzione cinematografica nata nel 1951, ha prodotto da quando è nata un totale di 495 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img16.png ><div class=centered>UIP</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgq_vp4MqFkPUWvz_lFQnMSLh5ySd3jTLYRxfiFPQ5VIPLuMe8_Bkmrpw align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1993<br><b>TITOLO: </b>Schindler's List - La lista di Schindler <br><b>GENERE: </b>Drammatico<br><b>DURATA: </b> 195 Min<br><b>DISTRIBUZIONE: </b>UIP<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Liam Neeson, Ben Kingsley, Ralph Fiennes, Caroline Goodall, Jonathan Sagall, Embeth Davidtz, Malgoscha Gebel, Shmuel Levy, Mark Ivanir, Béatrice Macola, Andrzej Seweryn, Friedrich von Thun, Krzysztof Luft, Harry Nehring, Norbert Weisser, Adi Nitzan, Michael Schneider, Miri Fabian, Anna Mucha, Alebrt Misak, Michael Gordon (III, Aldona Grochal, Jacek Wójcicki, Beata Paluch, Piotr Polk, Ezra Dagan, Beata Nowak, Rami Heuberger, Uri Avrahami, 
+Adam Siemion, Magdalena Dandourian, Pawel Delag, Shabtai Konorti, Henryk Bista, Tadeusz Bradecki, Oliwia Dabrowska<br><b>TRAMA: </b> Cracovia, 1939. L'industriale tedesco Oskar Schindler, bella presenza e temperamento avventuroso, manovrando i vertici nazisti tenta di rilevare un fabbrica per produrre pignatte e marmitte. Già reclusi nel ghetto di Podgorze, ed impossibilitati a commerciare, alcuni ebrei vengono convinti da Schindler a fornire il denaro per rilevare l'edificio: li ripagherà impiegandoli nella fabbrica, pagandoli con utensili da scambiare e sottraendoli al campo di lavoro comandato dal sadico criminale tedesco Amon Goeth. Dopo aver ricevuto la breve visita di Emilie, la moglie che subito torna in Moravia vista la vita di libertino impenitente del marito, Schindler, sempre più nelle grazie dell'alto comando nazista e di Goeth, costruisce un campo per i suoi operai, dove le milizie non possono entrare senza la sua autorizzazione. Infine, scatenatosi lo sterminio, decide di attivare, dando fondo a tutte le sue risorse finanziarie, una fabbrica di granate nella natia Brinnlitz. Con l'aiuto dell'inseparabile Itzhak Stern, il contabile ebreo, compila una lista di 1100 persone ebree perché vengano a lui affidate come operai. Mentre gli uomini arrivano a destinazione, le donne vengono per errore tradotte ad Auschwitz, e solo con grande rischio ed impiegando a fondo risorse e conoscenze, Schindler riesce a strapparle alla morte. Per sette mesi la fabbrica produce appositamente granate difettose, finché l'armistizio non trova l'industriale senza denaro. I suoi operai gli donano un anello d'oro con su incisa una frase del Talmud: "Chiunque salva una vita salva il mondo intero".<br><b>MUSICHE: </b>John Williams<br><b>VALUTAZIONE IN ITALIA: </b>9 SU 10 HANNO VOTATO 253 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.9 SU 10 HANNO VOTATO 1047048 PERSONE<br><br><img src= Grafico_16.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f17><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vSwPfAwcxGrGS9UbEuLhOSp7w5AdREY_PyuJe5fBfY33Eq5arIwsVQ align=left ></div></td><td><a name=f17></a><h2> United Artists Corporation </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>United Artists Corporation</b> è una famosa casa di distribuzione cinematografica nata nel 1934, ha prodotto da quando è nata un totale di 224 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img17.png ><div class=centered>United Artists Corporation</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYDwg22DCLRA1GmW00gBNZsTZbjc78rmx2HBpapcDUOAik1k7hQiEAew align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1984<br><b>TITOLO: </b>Nightmare - Dal profondo della notte <br><b>GENERE: </b>Horror<br><b>DURATA: </b> 88 Min<br><b>DISTRIBUZIONE: </b>United Artists Corporation<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>John Saxon, Ronee Blakley, Heather Langenkamp, Amanda Wyss, Johnny Depp, Robert Englund, Charles Fleischer, Joe Unger, Joseph Whipp, Jsu Garcia, Lin Shaye<br><b>TRAMA: </b> Siamo in America e un misterioso individuo si sta costruendo una terribile arma: un guanto speciale con le dita prolungate da acuminati artigli di acciaio. Tina, una giovanissima, dopo essersi persa in un intricato groviglio di stradine viene assalita dal mostro che tenta di ucciderla con la sua "mano" micidiale. Ma Tina si sveglia, si è trattato solo di un tremendo sogno (molto strano come sogno poiché effettivamente la sua camicia da notte è strappata). L'indomani ella incontra i suoi amici, Nancy che pure ha fatto un sogno simile al suo, Rod che ama Tina e che ha avuto anche lui incubi notturni e Glen spasimante di Nancy che non crede a niente. Continua l'incubo per Tina la quale, dopo la partenza della madre con l'amico, vuole i tre amici con lei la notte a casa sua poiché ha paura. Inizia una notte memorabile...<br><b>MUSICHE: </b>Charles Bernstein<br><b>VALUTAZIONE IN ITALIA: </b>7.36 SU 10 HANNO VOTATO 31 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>7.5 SU 10 HANNO VOTATO 179739 PERSONE<br><br><img src= Grafico_17.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f18><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEiNiabigIaQf2AKOdqm8Falw0XCgHkZ3jPzArcihMXDhGQAR1KCq7Tg align=left ></div></td><td><a name=f18></a><h2> Universal Studios  </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Universal Studios </b> è una famosa casa di distribuzione cinematografica nata nel 1940, ha prodotto da quando è nata un totale di 1028 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img18.png ><div class=centered>Universal Studios </div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5FjaU89ioZKfcZOB3LOuOSb3TgsHwgXFPHhQAMSgSlFc0G2uxLHe4hA align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>1985<br><b>TITOLO: </b>Ritorno al futuro <br><b>GENERE: </b>Avventura<br><b>DURATA: </b> 116 Min<br><b>DISTRIBUZIONE: </b>Universal Studios <br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover, Thomas F. Wilson, Wendie Jo Sperber, James Tolkan, Billy Zane, Claudia Wells, Frances Lee McCain, Marc McClure, George Di Cenzo<br><b>TRAMA: </b> Marty McFly vive con i genitori e i fratelli a Hill Walley: è un simpatico diciassettenne, che una sera incontra uno scienziato spiritato, il dott. Brown, il quale è riuscito a trasformare un'auto DeLorean in uno straordinario "veicolo del tempo". L'auto è alimentata da plutonio, che Brown ha sottratto a dei terroristi libici e questi lo tallonano per vendicarsi, finché gli sparano, poco dopo che il vecchio ha sommariamente spiegato a Marty gli elementi essenziali della sua creatura e le possibilità straordinarie che a questa si presentano. Così Marty, per salvarsi dagli aggressori, parte a razzo e tutto solo e si ritroverà nella sua stessa cittadina trent'anni prima, giusto nel 1955.<br><b>MUSICHE: </b>Alan Silvestri, Chris Hayes, Johnny Colla<br><b>VALUTAZIONE IN ITALIA: </b>8.31 SU 10 HANNO VOTATO 324 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.5 SU 10 HANNO VOTATO 898680 PERSONE<br><br><img src= Grafico_18.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f19><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk65B-I1eM-YAHLRyee2v4Y-Ifndo28PFNxR2Cf4GIJkI2gzg1bjfwcU align=left ></div></td><td><a name=f19></a><h2> Walt Disney Pictures </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Walt Disney Pictures</b> è una famosa casa di distribuzione cinematografica nata nel 1940, ha prodotto da quando è nata un totale di 237 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img19.png ><div class=centered>Walt Disney Pictures</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyNBia4llLRL3Xns171nU35EkYbpukelWtXjuYv7KHC-WZJorhm9oD4g align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2011<br><b>TITOLO: </b>Il Re Leone 3D <br><b>GENERE: </b>Animazione<br><b>DURATA: </b> 89 Min<br><b>DISTRIBUZIONE: </b>Walt Disney Pictures<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>NA, NA<br><b>TRAMA: </b> Convinto di essere responsabile della morte del padre re Mufasa, in realtà ucciso dal perfido fratello Scar, il piccolo leoncino Simba si allontana dalla sua terra. Accolto e allevato dal suricato Timon e dal facocero Pumbaa, Simba cresce cercando di dimenticare il passato. Ritrovato da Nala, sua vecchia compagna di giochi, e Rafiki, babbuino sciamano, decide di tornare per scacciare l'usurpatore Scar.<br><b>MUSICHE: </b>NA<br><b>VALUTAZIONE IN ITALIA: </b>8.2 SU 10 HANNO VOTATO 815 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>8.5 SU 10 HANNO VOTATO 802051 PERSONE<br><br><img src= Grafico_19.png ><br><br><br></div></ul><div style=display:none;></div><ul><button class=accordion><li><a href=#f20><table><th><td><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3h2wkIF6KsOeoIB8uJ4l207P9ZNVIGlEUiEDzItLI0_g-lgLXscbgQ align=left ></div></td><td><a name=f20></a><h2> Warner Bros. </h2></td></th></table></a></li></button><div class=panel><br><br>La <b>Warner Bros.</b> è una famosa casa di distribuzione cinematografica nata nel 1933, ha prodotto da quando è nata un totale di 2059 film.<br><br>GENERE DI FILM PRODOTTI:<div class=img2><center><div class=img1><div class=contai><img src= img20.png ><div class=centered>Warner Bros.</div></div></div><br> <h2>Film che ha avuto più successo:</h2><br><div class=img1><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4PDxJSZv7tb6RxO3REjkCVOUUlF3ItGGMcC9gn_Dbz6wmdOl5bPpSq0M align=left ></div></center><br><b>ANNO DI PRODUZIONE: </b>2008<br><b>TITOLO: </b>Il cavaliere oscuro <br><b>GENERE: </b>Azione<br><b>DURATA: </b> 152 Min<br><b>DISTRIBUZIONE: </b>Warner Bros.<br><b>PAESE DOVE E' STATO GIRATO: </b>USA<br><b>ATTORI: </b>Christian Bale, Michael Caine, Heath Ledger, Maggie Gyllenhaal, Gary Oldman, Morgan Freeman, Eric Roberts, Aaron Eckhart, Anthony Michael Hall, Monique Gabriela Curnen, Michael Jai White, Nathan Gamble, Joshua Harto, Chin Han, Melinda McGraw, Nestor Carbonell, Cillian Murphy<br><b>TRAMA: </b> Seguito del di Batman Begins, Il Cavaliere Oscuro vede ancora una volta lavorare insieme il regista Christopher Nolan e la star Christian Bale, che riprende il ruolo di Bruce Wayne/Batman. Con l'aiuto del tenente Jim Gordon e del nuovo Procuratore Distrettuale, Harvey Dent, Batman vuole debellare per sempre il crimine organizzato di Gotham City. Il trio inizialmente sembra potercela fare, ma presto i tre diventano le vittime di un pericoloso malvivente, il Joker, che getta Gotham nell'anarchia e fa sì che il Cavaliere Oscuro si trovi molto vicino ad oltrepassare il confine tra l'essere un eroe e l'essere un semplice giustiziere della notte. Heath Ledger interpreta il ruolo della canaglia Joker, e Aaron Eckhart quello del Procuratore Distrettuale Harvey Dent. Maggie Gyllenhaal fa parte del cast nel ruolo di Rachel Dawes. Dalla prima pellicola Batman Begins troviamo gli attori Gary Oldman nel ruolo del Tenente Jim Gordon; l'attore vincitore del premio Oscar Michael Caine nel ruolo di Alfred; e l'attore vincitore del premio Oscar Morgan Freeman che interpreta Lucius Fox.<br><b>MUSICHE: </b>James Newton Howard, Hans Zimmer<br><b>VALUTAZIONE IN ITALIA: </b>8.61 SU 10 HANNO VOTATO 567 PERSONE<br><b>VALUTAZIONE NEL MONDO: </b>9 SU 10 HANNO VOTATO 1993548 PERSONE<br><br><img src= Grafico_20.png ><br><br><br></div></ul><div style=display:none;>[1] "</div></div><br><br><br>"
+
+
+<script>
+function myFunction() {
+    
+    var input, filter, ul, li, a, i, button;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("button");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+            
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+</div>
+<br><br><br><br>
+</div>
+  <div class="column" style="background-color:hsla(147, 50%, 47%, 0.01)">
+  <br>
+
+ 
+  
+  
+ </div>
+
+
+
+
+
+
+
+</body>
+</html>
