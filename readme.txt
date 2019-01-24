@@ -1,3 +1,11 @@
+
+Blog Film Giacomo Saccaggi:
+
+Il design di questo blog è ispirato da INFINITY ed è stato utilizando rispettando la sua politica di utilizzo:
+
+
+
+
 ==================================================================================================
 
 DESCRIPTION:
