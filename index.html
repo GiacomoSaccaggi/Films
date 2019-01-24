@@ -37,10 +37,27 @@
 	
 	
 	<style>
-		iframe{
-			width=100%;
-			
+		
+		.cell{
+			display: none;
+			 width=100%;
+    height="auto";
 		}
+		.app{
+		}
+		
+		
+		
+		@media only screen and (max-width: 1024px) {
+			.cell{
+				display: inline-block;
+			}
+			.app{
+				display: none;
+			}
+		}
+		
+		
 		
 	</style>
 </head>
@@ -328,9 +345,12 @@ Gli investimenti nella parte grafica dei film ha portato a un aumento dei costi 
 <script>function f2() {pag2=window.open("https://giacomosaccaggi.github.io/Films/graph_dinamico.html","pag2","newwin","height=450, width=550,toolbar=no,scrollbars="+scroll+"menubar=no");}</script> 
 		    
    	<br>
-   	<iframe src="guida.html" width="100%" height="600">
+   	<iframe class="app"  src="guida.html" width="100%" height="600">
   <p>Siamo spiacenti ma il tuo browser non accetta gli iframes, visiti il sito utilizzando un altro browser.</p>
 </iframe>
+	   
+	   
+	   <img class="cell" src="cell.gif">
 <br>
 <div class="row">
    		<div class="col-twelve">
